@@ -54,7 +54,7 @@ fastp \
 ![Js2fCw7.png](https://iili.io/Js2fCw7.png)
 
 
-fastq软件文档：https://github.com/OpenGene/fastp?tab=readme-ov-file#all-options
+fastp软件文档：https://github.com/OpenGene/fastp?tab=readme-ov-file#all-options
 
 ---
 ## 3. 序列比对
@@ -141,7 +141,7 @@ strelka软件文档：https://github.com/Illumina/strelka/blob/v2.9.x/docs/userG
 ---
 ## 6. 变异注释
 这里我们对上一步得到的变异检测结果进行注释。注释的目的，是获取变异的表型信息，例如变异属于哪个基因，在该基因的哪个位置等等。
-因为上一步的变异结果以标准的VCF文件格式储存，所以可以使用多种公共开源软件进行注释。这里我们用an nova软件举例。
+因为上一步的变异结果以标准的VCF文件格式储存，所以可以使用多种公共开源软件进行注释。这里我们用ANNOVAR软件举例。
 该软件安装完成后自带人类参考基因组hg19版本的refGene数据库，它可以注释变异位点位于哪个基因、位于基因的什么位置以及该变异是否引起蛋白质改变等信息
 ```
 table_annovar.pl \
