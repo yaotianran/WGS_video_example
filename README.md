@@ -83,7 +83,7 @@ samtools软件文档：http://www.htslib.org/doc/samtools.html
 ---
 ## 4. 去除重复序列
 为了下游分析的准确，一般需要将，由PCR操作产生的重复序列去除或标记出来。
-在这一步骤中，我们使用软件sambamba去掉比对结果中的重复序列。这里输入是我们在上一步产生的比对后的BAM文件，sambamba markdup命令的输出就是去掉重复系列以后的BAM文件
+在这一步骤中，我们使用软件sambamba去掉比对结果中的重复序列。这里的输入是我们在上一步产生的比对后的BAM文件，sambamba markdup命令的输出就是去掉重复系列以后的BAM文件
 ```
 sambamba markdup -r sorted.bam rmdup.sorted.bam --tmpdir tmp --overflow-list-size 1000000
 ```
