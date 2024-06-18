@@ -65,7 +65,9 @@ bwa index hg19.fasta
 ```
 之后就可以使用bwa mem命令，比对的结果经过排序，以BAM格式储存在文件中
 ```
-bwa mem -M -R "@RG\tID:sampleid\tSM:sampleid" hg19.fasta clean_R1.fq.gz clean_R1.fq.gz | samtools view -bS - | samtools sort -o sorted.bam -
+bwa mem -M -R "@RG\tID:sampleid\tSM:sampleid" hg19.fasta clean_R1.fq.gz clean_R1.fq.gz |\
+ samtools view -bS - |\
+ samtools sort -o sorted.bam -
 ```
 
 最后不要忘了将排序后的BAM文件再次index
