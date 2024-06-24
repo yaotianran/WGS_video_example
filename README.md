@@ -90,7 +90,7 @@ samtools软件文档：http://www.htslib.org/doc/samtools.html
 sambamba markdup -r sorted.bam rmdup.sorted.bam --tmpdir tmp --overflow-list-size 1000000
 ```
 
-去重之后我们可以使用sambamba flagstate命令查看一下效果
+去重之后我们可以使用sambamba flagstat命令查看一下效果
 ```
 sambamba flagstat rmdup.sorted.bam > rmdup.sorted.bam.flagstat
 ```
