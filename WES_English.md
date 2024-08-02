@@ -1,7 +1,4 @@
-# WES_English_example
-For training projects
 
----
 # WES sequencing data analysis tutorial
 
 In this WES sequencing data analysis tutorial we will use a PE150 data sampled from human blood as an example to introduce how to discover mutations related to hunman genetic diease sickle cell anemia.
